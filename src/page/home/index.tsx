@@ -3,7 +3,6 @@ import ApiProvider from '../../api';
 import { Footer } from '../../components/footer';
 import { Header } from '../../components/header';
 import { Sidebar } from '../../components/sidebar';
-import { handle } from '../../utils';
 
 // types
 type CryptoTypes = {
@@ -15,11 +14,6 @@ type CryptoTypes = {
 const Home = () => {
 	// states
 	const [cryptos, setCryptos] = useState<CryptoTypes[]>([]);
-
-	// •	image
-	// •	name
-	// •	current_price
-	// •	market_cap
 
 	// methods
 	const cryptoApi = async () => {
